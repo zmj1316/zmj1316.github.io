@@ -9,7 +9,9 @@ comments: true
 share: true
 ---
 接着上次的lex yacc,最近要做一个简单的汇编器，所以先用ply写了一个
+
 <!--more-->
+
 中途发现要实现label好像要全部扫一遍才行，结果只能先用lex扫一遍确定label再用lex+yacc输出了，应该是有解决方法的，大概是规则没写好
 
 ~~~ python
