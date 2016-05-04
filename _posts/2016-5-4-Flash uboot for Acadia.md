@@ -11,7 +11,7 @@ share: true
 嵌入式用的是 `Acadia` ，自带一块 emmc 但是很难搞，折腾了一下才把 u-boot 刷进去。
 
 <!--more-->
-* 1.	From https://github.com/linksprite/u-boot-acadia1.0-beta download u-boot source code for Acadia.
+* 1.	From [Here](https://github.com/linksprite/u-boot-acadia1.0-beta) download u-boot source code for Acadia.
 * 2.	Install arm cross compile tools
 * 3.	Run:
 
