@@ -14,18 +14,24 @@ share: true
 * 1.	From https://github.com/linksprite/u-boot-acadia1.0-beta download u-boot source code for Acadia.
 * 2.	Install arm cross compile tools
 * 3.	Run:
+
 ~~~
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- distclean
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- mx6q_sabresd_config
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
 ~~~
+
 * 4.	Connect the board and copy uboot.bin into acadia 
 * 5.	Disable write protection:
+
 ~~~
  #> echo 0 > /sys/block/mmcblk0boot0/force_ro 
 ~~~
+
 * 6.
+
 ~~~	
 dd if=u-boot.bin of=/dev/mmcblk0boot0 bs=512 seek=2 skip=2
 ~~~
+
 * 7.	reboot
