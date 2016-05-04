@@ -21,7 +21,7 @@ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- mx6q_sabresd_config
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
 ~~~
 
-* 4.	Connect the board and copy uboot.bin into acadia 
+* 4.	Connect the board and copy u-boot.bin into acadia 
 * 5.	Disable write protection:
 
 ~~~
