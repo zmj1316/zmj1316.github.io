@@ -37,4 +37,4 @@ dd if=u-boot.bin of=/dev/mmcblk0boot0 bs=512 seek=2 skip=2
 * 7.	reboot
 
 ### How to flash a blocked Acadia on Windows?
-[tutorial-on-flashing-linksprite-acadia](learn.linksprite.com/acadia/tutorial-on-flashing-linksprite-acadia/)
+[tutorial-on-flashing-linksprite-acadia](http://learn.linksprite.com/acadia/tutorial-on-flashing-linksprite-acadia/)
