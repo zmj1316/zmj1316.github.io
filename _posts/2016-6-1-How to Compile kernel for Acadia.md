@@ -11,7 +11,9 @@ share: true
 Acadia again!
 
 又是 Acadia ，作为一个被生产厂家抛弃的产品还真是不好搞啊！
+
 <!--more-->
+
 ### Prepare
 
 * 1.Download kernel from [Here](https://github.com/linksprite/linux-kernel-acadia1.0-beta/)
