@@ -14,7 +14,7 @@ Acadia again!
 
 <!--more-->
 
-需要的文件都传到 cc98 ftp 了，在 zju 内网的可以免去下载之苦
+需要的文件都传到 cc98 ftp 了，在 zju 内网的可以免去下载之苦，链接在文章最后
 
 ### Update
 
