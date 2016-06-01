@@ -14,6 +14,8 @@ Acadia again!
 
 <!--more-->
 
+需要的文件都传到 cc98 ftp 了，在 zju 内网的可以免去下载之苦
+
 ### Prepare
 
 * 1.Download kernel from [Here](https://github.com/linksprite/linux-kernel-acadia1.0-beta/)
