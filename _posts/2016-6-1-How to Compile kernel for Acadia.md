@@ -16,6 +16,11 @@ Acadia again!
 
 需要的文件都传到 cc98 ftp 了，在 zju 内网的可以免去下载之苦
 
+### Update
+
+Recieved complains about not compiling on Ubuntu, some simple modifies are needed. But I dont have any machine running `Ubuntu`,
+only openSUSE, so DIY.
+
 ### Prepare
 
 * 1.Download kernel from [Here](https://github.com/linksprite/linux-kernel-acadia1.0-beta/)
@@ -27,8 +32,8 @@ Acadia again!
 You will need `mkimage` to make uImage. You can find it under `tools` in u-boot dir if you have compiled u-boot, 
 or you may need something like `uboot-tools` in openSUSE that contains `mkimage`.
 
-It is suggested that you use the [cross-tools](https://github.com/embest-tech/fsl-linaro-toolchain/) above and 
-add `/bin` to your path so you don't need to add the path in the `CROSS_COMPILE` field.
+It is suggested that you use the [cross-tools](https://github.com/embest-tech/fsl-linaro-toolchain/) above (or Errors may occur) and 
+add `/bin` to your path so you don't need to add the full path in the `CROSS_COMPILE` field.
 
 Make sure you can access `arm-none-linux-gnueabi-gcc` in kernel root dir, 
 or you may have to add the full path to the `CROSS_COMPILE` field.
