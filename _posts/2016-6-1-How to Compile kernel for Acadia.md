@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to flash u-boot.bin into acadia
+title: How to compile kernel for Acadia
 description: "嵌入式 "
 category: tutorial
-tags: [Acadia, pcDuino, kernel]
+tags: [Acadia, pcDuino, kernel, cross-toolchain]
 imagefeature:
 comments: true
 share: true
