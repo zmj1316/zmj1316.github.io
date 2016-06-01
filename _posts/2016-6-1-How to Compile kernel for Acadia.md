@@ -76,7 +76,9 @@ clean:
     rm *.o *.ko *.mod.c
 .PHONY:clean
 ```
+### Files needed on cc98 ftp (Zhejiang University Only)
 
+[Acadia](ftp://software.cc98.org/%23Upload/Acadia/)
 
 ### How to flash a blocked Acadia on Windows?
 
