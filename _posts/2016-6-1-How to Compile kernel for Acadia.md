@@ -43,7 +43,9 @@ make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- uImage
 
 ### Burn
 
-If you are using other version of `gcc`, it's suggested that test the new kernel on u-boot through network before burn it into board.
+If you are using other version of `gcc`, it's suggested that test the new kernel on u-boot through network before burning it into board.
+
+If that happened after you burn the kernel, see `How to flash a blocked Acadia on Windows?`.
 
 * 1.Copy `uImage` from `arch/arm/boot` to Acadia.
 
@@ -77,4 +79,5 @@ clean:
 
 
 ### How to flash a blocked Acadia on Windows?
+
 [tutorial-on-flashing-linksprite-acadia](http://learn.linksprite.com/acadia/tutorial-on-flashing-linksprite-acadia/)
