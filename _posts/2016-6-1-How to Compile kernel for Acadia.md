@@ -18,8 +18,11 @@ Acadia again!
 
 ### Update
 
-Recieved complains about not compiling on Ubuntu, some simple modifies are needed. But I dont have any machine running `Ubuntu`,
+* 0.Recieved complains about not compiling on Ubuntu, some simple modifies are needed. But I dont have any machine running `Ubuntu`,
 only openSUSE, so DIY.
+
+
+* 1.Makefile changed.
 
 ### Prepare
 
@@ -71,7 +74,7 @@ you may try to find the `/lib/build` dir, but here you just set the `KERNEL_DIR`
 
 
 ```
-obj-m := module.o
+obj-m += module.o
 
 KERNEL_DIR := /home/demo/linux-kernel-acadia1.0-beta
 
