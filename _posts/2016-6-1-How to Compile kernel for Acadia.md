@@ -72,6 +72,11 @@ dd if=$FILE of=/dev/mmcblk0 bs=1M seek=1 conv=fsync
 Of course you want to compile kernel modules for the new kernel, here is a example of `Makefile`,
 you may try to find the `/lib/build` dir, but here you just set the `KERNEL_DIR` to the kernel root dir:
 
+Before this, make sure you have run
+```
+make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- modules_prepare
+```
+to prepare for the compiling of kernel modules
 
 ```
 obj-m += module.o
