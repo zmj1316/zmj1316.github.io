@@ -97,6 +97,6 @@ clean:
 
 [Acadia](ftp://software.cc98.org/%23Upload/Acadia/)
 
-### How to flash a blocked Acadia on Windows?
+### How to flash a bricked Acadia on Windows?
 
 [tutorial-on-flashing-linksprite-acadia](http://learn.linksprite.com/acadia/tutorial-on-flashing-linksprite-acadia/)
