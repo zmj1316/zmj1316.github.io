@@ -16,7 +16,7 @@ Acadia again!
 
 需要的文件都传到 cc98 ftp 了，在 zju 内网的可以免去下载之苦，链接在文章最后
 
-### Update
+#### Update
 
 * 0.Recieved complains about not compiling on Ubuntu, some simple modifies are needed. But I dont have any machine running `Ubuntu`,
 only openSUSE, so DIY.
@@ -32,11 +32,11 @@ only openSUSE, so DIY.
 
 ### Compile
 
-You will need `mkimage` to make uImage. You can find it under `tools` in u-boot dir if you have compiled u-boot, 
-or you may need something like `uboot-tools` in openSUSE that contains `mkimage`.
+You will need `mkimage` to generate `uImage`. You can find it under `tools` in u-boot dir if you have compiled u-boot, 
+or you may need to install util like `uboot-tools` that contains `mkimage`.
 
 It is suggested that you use the [cross-tools](https://github.com/embest-tech/fsl-linaro-toolchain/) above (or Errors may occur) and 
-add `/bin` to your path so you don't need to add the full path in the `CROSS_COMPILE` field.
+add `fsl-linaro-toolchain/bin` to your path so you don't need to add the full path in the `CROSS_COMPILE` field.
 
 Make sure you can access `arm-none-linux-gnueabi-gcc` in kernel root dir, 
 or you may have to add the full path to the `CROSS_COMPILE` field.
@@ -53,16 +53,16 @@ make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- uImage
 
 ### Burn
 
-If you are using other version of `gcc`, it's suggested that test the new kernel on u-boot through network before burning it into board.
+If you are using other version of `gcc`, you'd better test the new kernel on u-boot through network before burning it into board.
 
-If that happened after you burn the kernel, see `How to flash a blocked Acadia on Windows?`.
+If that happened after you burn the kernel, see [How to flash a blocked Acadia on Windows?](http://learn.linksprite.com/acadia/tutorial-on-flashing-linksprite-acadia/).
 
 * 1.Copy `uImage` from `arch/arm/boot` to Acadia.
 
 * 2.Burn:
 
 ```
-dd if=$FILE of=/dev/mmcblk0 bs=1M seek=1 conv=fsync
+dd if=PATH_TO_YOUR_UIMAGE of=/dev/mmcblk0 bs=1M seek=1 conv=fsync
 ```
 
 * 3.Reboot
