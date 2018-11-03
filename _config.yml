@@ -34,3 +34,5 @@ collections:
 
 copyright: []
 #timezone: Asia/Shanghai
+
+theme: jekyll-theme-leap-day
