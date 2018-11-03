@@ -47,18 +47,18 @@ description: ""
     </li>
     {% elsif page == 1 %}
     <li>
-      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      <a href="{{ '/index' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     </li>
     {% else %}
     <li>
-      <a href="{{ site.paginate_path | append : '.html' | prepend: site.baseurl | replace: ':num', page }}">{{ page }}</a>
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', page }}">{{ page }}</a>
     </li>
     {% endif %}
   {% endfor %}
 
   {% if paginator.next_page %}
    <li>
-    <a href="{{ paginator.next_page_path | append : '.html' | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
    </li>
   {% else %}
   <li>
