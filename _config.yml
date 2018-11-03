@@ -21,7 +21,7 @@ paginate_path: "index_:num"
 index_layout: "index.html"
 category_layout: "_layouts/category.html"
 tag_layout: "_layouts/tag.html"
-excerpt_separator:  '<!-- more -->'
+excerpt_separator:  '<!--more-->'
 
 #不使用gems库中的jekyll-paginate-category
 #使用基于jekyll-paginate改写的的栏目分页插件，所以jekyll-paginate还需要用上。
