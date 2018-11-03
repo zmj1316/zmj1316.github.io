@@ -6,7 +6,7 @@ title: Tags
 	window.onload = function(){
 		if (window.location.hash.indexOf('#') >= 0) {
 			$('html,body').animate({
-				scrollTop: ($(window.location.hash).offset().top - 50) + "px"
+				scrollTop: ($(window.location.hash).offset().top - 150) + "px"
 			},
 			300);
 		}; //主要修复评论定位不准确BUG
