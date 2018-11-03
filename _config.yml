@@ -11,6 +11,7 @@ url: https://zmj1316.github.io
 domain: zmj1316.github.io
 
 all_categories: [
+  ["tag", "标签","/tags.html"],
   ["about", "关于","/about.html"]
 ]
 
