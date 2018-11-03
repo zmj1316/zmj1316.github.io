@@ -5,6 +5,16 @@ layout: default
 {% assign category_posts=site.categories[page.category] %}{% assign prevpost = nil %}{% assign nextpost = nil %}{% assign found = false %}
 {% for post in category_posts %}{% if found==true %}{% assign prevpost = post %}{% break %}{% endif %}{% if page.url==post.url %}{% assign found = true %}{% endif %}{% if found==false %}{% assign nextpost = post %}{% endif %}{% endfor %}
 {% assign category_posts=nil %}
+<script type="text/javascript">
+	window.onload = function(){
+		if (window.location.hash.indexOf('#') >= 0) {
+			$('html,body').animate({
+				scrollTop: ($(window.location.hash).offset().top - 52) + "px"
+			},
+			300);
+		}; //主要修复评论定位不准确BUG
+	}
+</script> 
 <div  class="post_frame">
 <!-- Navi -->
 <div class="post_navi">
