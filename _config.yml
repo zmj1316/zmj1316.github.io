@@ -16,6 +16,10 @@ all_categories: [
   ["about", "关于","/about"]
 ]
 
+url_categories: [
+  ["other", "其他","/category#other"]
+]
+
 paginate: 10 
 paginate_path: "index_:num"
 

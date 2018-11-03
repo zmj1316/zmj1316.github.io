@@ -1,7 +1,7 @@
 --- 
 layout: default 
 --- 
-{% for cat in site.all_categories %}{% if page.category == cat[0] %}{% assign category_name = cat[1] %}{% assign category_link = cat[2] %}{% endif %}{% endfor %}
+{% for cat in site.url_categories %}{% if page.category == cat[0] %}{% assign category_name = cat[1] %}{% assign category_link = cat[2] %}{% endif %}{% endfor %}
 {% assign category_posts=site.categories[page.category] %}{% assign prevpost = nil %}{% assign nextpost = nil %}{% assign found = false %}
 {% for post in category_posts %}{% if found==true %}{% assign prevpost = post %}{% break %}{% endif %}{% if page.url==post.url %}{% assign found = true %}{% endif %}{% if found==false %}{% assign nextpost = post %}{% endif %}{% endfor %}
 {% assign category_posts=nil %}
@@ -9,7 +9,7 @@ layout: default
 <!-- Navi -->
 <div class="post_navi">
 	<a href="/">首页</a>&nbsp;>&nbsp;
-	<a href="/category#{{ page.category }}">{{ page.category }}</a>&nbsp;>&nbsp;
+	<a href="{{ category_link }}">{{ category_name }}</a>&nbsp;>&nbsp;
 	<span class="post_navi_span">正文</span>
 </div>
 
@@ -18,7 +18,7 @@ layout: default
 	<h1>{{ page.title }}</h1>
 	<hr class="hrline"/>
 	<div class="post_titledate">
-		栏目：<a href="/category#{{ page.category }}">{{ page.category }}</a>&nbsp;&nbsp;&nbsp;
+		栏目：<a href="{{ category_link }}">{{ category_name }}</a>&nbsp;&nbsp;&nbsp;
 		{% if page.tags.size > 0%}
 			标签：{% for tag in page.tags %}
 					{% if tag != "" %}
