@@ -2,10 +2,18 @@
 layout: page
 title: 分类
 ---
+<script type="text/javascript">
+	window.onload = function(){
+		if (window.location.hash.indexOf('#') >= 0) {
+			$('html,body').animate({
+				scrollTop: ($(window.location.hash).offset().top - 50) + "px"
+			},
+			300);
+		}; //主要修复评论定位不准确BUG
+	}
+</script> 
 
-<style>
-		h3 { margin-top: 300px; }
-</style>
+
 
 <div class="tag_posts">
 {% for tag in site.categories %} 
