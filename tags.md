@@ -6,9 +6,6 @@ title: Tags
     <g></g>
 </svg>
 <div class="tag_posts">
-</div>
-
-<div>
 {% for tag in site.tags %} 
 	<a name="{{ tag[0] }}"></a><h3 id = "{{ tag }}">{{ tag[0] }}({{ tag[1].size }})</h3>
 	<ul>
