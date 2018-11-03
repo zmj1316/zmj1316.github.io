@@ -8,10 +8,9 @@ title: Tags
 <div class="tag_posts">
 </div>
 
-<!--
 <div>
 {% for tag in site.tags %} 
-	<a name="{{ tag[0] }}"></a><h3>{{ tag[0] }}({{ tag[1].size }})</h3>
+	<a name="{{ tag[0] }}"></a><h3 id = "{{ tag }}">{{ tag[0] }}({{ tag[1].size }})</h3>
 	<ul>
 	{% for post in tag[1] %}
 		<li><span>{{ post.date | date:"%Y-%m-%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -20,6 +19,7 @@ title: Tags
 {% endfor %}
 </div>
 
+<!--
 //tag js
 {% for tag in site.tags %}
     {
