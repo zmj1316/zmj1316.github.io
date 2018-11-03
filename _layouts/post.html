@@ -1,7 +1,7 @@
 --- 
 layout: default 
 --- 
-{% for cat in site.all_categories %}{% if page.category == cat[0] %}{% assign category_name = cat[1] %}{% assign category_link = cat[2] %}{% endif %}{% endfor %}
+{% assign category_link="/categories#"+category_name %}
 {% assign category_posts=site.categories[page.category] %}{% assign prevpost = nil %}{% assign nextpost = nil %}{% assign found = false %}
 {% for post in category_posts %}{% if found==true %}{% assign prevpost = post %}{% break %}{% endif %}{% if page.url==post.url %}{% assign found = true %}{% endif %}{% if found==false %}{% assign nextpost = post %}{% endif %}{% endfor %}
 {% assign category_posts=nil %}
