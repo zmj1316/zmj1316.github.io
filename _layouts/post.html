@@ -1,6 +1,7 @@
 --- 
 layout: default 
 --- 
+{% assign category_name=page.category %}
 {% assign category_link='/categories#' %}
 {% assign category_link=category_link | append category_name %}
 {% assign category_posts=site.categories[page.category] %}{% assign prevpost = nil %}{% assign nextpost = nil %}{% assign found = false %}
