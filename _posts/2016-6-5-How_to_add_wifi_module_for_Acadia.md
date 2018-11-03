@@ -3,7 +3,7 @@ layout: post
 title: 给 Acadia 加上 wifi 模块实现热点 
 description: "嵌入式 "
 category: tutorial
-tags: [Acadia, pcDuino, kernel, Wireless, Hotspot, AP]
+tags: [Acadia, pcDuino, kernel, WIFI]
 imagefeature:
 comments: true
 share: true

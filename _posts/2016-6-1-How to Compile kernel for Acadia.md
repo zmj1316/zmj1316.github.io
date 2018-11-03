@@ -3,7 +3,7 @@ layout: post
 title: How to compile kernel for Acadia
 description: "嵌入式 "
 category: tutorial
-tags: [Acadia, pcDuino, kernel, cross-toolchain]
+tags: [Acadia, pcDuino, kernel]
 imagefeature:
 comments: true
 share: true
