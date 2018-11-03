@@ -1,8 +1,15 @@
 --- 
 layout: default 
 --- 
-
-
+<script type="text/javascript">
+	window.onload = function(){
+		if (window.location.hash.indexOf('#') >= 0) {
+			$('html,body').animate({
+				scrollTop: ($(decodeURIComponent(window.location.hash)).offset().top - 52) + "px"
+			},
+			300);
+		}; //主要修复评论定位不准确BUG
+	}
 <!-- Navi -->
 <div class="post_frame">
   <div class="post_navi">
