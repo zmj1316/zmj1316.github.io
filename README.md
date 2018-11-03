@@ -1,34 +1,27 @@
-Jekyll Material Design 
-======================
+个人博客模板--基于Jekyll+Github构建。
+================
 
-Publish your static website/blog on GitHub Pages using Jekyll and Bootstrap 3 with a *"materialized"* style.
+#### 博客地址
+http://www.panxw.com, 支持PC与智能机访问。  
 
-This project is based on [Jekyll-Bootrap-3](https://github.com/dbtek/jekyll-bootstrap-3) and 
-[bootstrap-material-design](https://github.com/FezVrasta/bootstrap-material-design). It includes also the [Paper theme](http://bootswatch.com/paper) from [Bootswatch.com](http://bootswatch.com).
+#### 使用本项目作为博客模板，仅需如下几步：
+1,首先Fork或Download一份本项目代码。  
+2,修改_config.yaml及about.md文件，以变更个人信息。  
+3,修改_include目录下相关文件，以配置网站统计(analytics.html)，网友评论(comment.html)，右侧栏目(categories.html)等。  
+4,修改CNAME文件，以绑定自己的域名。  
+5,删除_posts下文章，换成你自己的。  
+6,最后，push到你自己的博客Repo~  
 
-## Usage
+#### 本项目使用了
+1,百度统计的网站统计服务，官网：http://tongji.baidu.com  
+2,不蒜子的页面浏览统计服务，官网：http://busuanzi.ibruce.info  
+3,GitHub Issues作网友评论服务，官网：https://imsun.net/posts/gitment-introduction/  
+4,Google 的Adsense广告，官网：https://www.google.com/adsense/login/zh_CN  
+如需查看或管理网站统计、评论或广告，请自行注册帐号并修改_includes目录下相关文件。  
 
-### 1. Create a Repo
-- Go to <https://github.com> and create a new repository named *USERNAME.github.io*  
+#### 联系作者
+QQ：85902258  
+邮箱：email(winfirm#163.com)  
+Github：https://github.com/panxw  
 
-### 2. Install Jekyll-Bootstrap-3  
-<pre>
-  <code>
-    $ git clone https://github.com/sentenza/jekyll-material-design USERNAME.github.io
-    $ cd USERNAME.github.io
-    $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
-    $ git push origin master  
-  </code>
-</pre>  
-### 3. Enjoy !
-- After giving 10 mins to GitHub of course.  
-
-For original project's usage and documentation please see the Wiki of this project.
-
-## Demo
-
-Visit [jekyll-material-design](https://sentenza.github.io/jekyll-material-design) on GitHub Pages
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
+**^_^*随喜Star一下本项目吧，谢谢~  

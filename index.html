@@ -1,31 +1,70 @@
 ---
 layout: index
-title: Key Zhang
-tagline: zmj1316
+title: "Android/iOS/React Native/Web相关"
+description: "探索尝试，发现未知可能！记录我学习使用Android/iOS开发、React Native、VPS、Linux、Web建站、Jekyll等技术过程中遇到的问题/解决办法，及一些个人心得总结。"
 ---
-{% include JB/setup %}
+{% if page.paginator %}
+  {% assign paginator = page.paginator %}
+{% endif %}
 
+<!-- ad -->
 
-<!-- Change the "about information" contained in /_includes/themes/bootstrap/index.html  -->
+<!-- Loop output paged posts -->
+{% for post in paginator.posts %}
+<h2>
+  <a href="{{ post.url }}">
+    {{ post.title }}
+  </a> 
+  <div class="post-date">
+	<span class="glyphicon glyphicon-time"></span>
+	{{ post.date | date:"%Y-%m-%d" }}
+  </div>
+</h2>
+<hr>
+{{ post.excerpt }}
+	<p><h3><a href="{{ post.url }}">阅读全文 &raquo;</a></h3></p>
+<hr>
+{% endfor %}
 
-  {% for post in site.posts %}
+<!-- Pager indicator -->
+<div style="margin:0px auto;text-align: center">
+{% if paginator.total_pages > 1 %}
+<ul class="pagination">
+  {% if paginator.previous_page %}
+  <li>
+    <a href="{{ category_path | append : paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  </li>
+  {% else %}
+  <li>
+    <span>&laquo; Prev</span>
+  </li>
+  {% endif %}
 
-                <!-- Blog Post Template on Index page -->
-                <h2>
-                    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-                </h2>
-                <p class="lead">
-                    Tagged under: {{post.tags | array_to_sentence_string}}
-                </p>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_string }}</p>
-                <!-- <hr>
-                <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
-                <hr>
-		{{ post.excerpt }}                
-                <a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-                <hr>
-
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <li class="active">
+      <span>{{ page }}</span>
+    </li>
+    {% elsif page == 1 %}
+    <li>
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    </li>
+    {% else %}
+    <li>
+      <a href="{{ site.paginate_path | append : '.html' | prepend: site.baseurl | replace: ':num', page }}">{{ page }}</a>
+    </li>
+    {% endif %}
   {% endfor %}
 
-
+  {% if paginator.next_page %}
+   <li>
+    <a href="{{ paginator.next_page_path | append : '.html' | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+   </li>
+  {% else %}
+  <li>
+    <span>Next &raquo;</span>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+</div>

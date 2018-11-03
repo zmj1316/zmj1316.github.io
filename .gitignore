@@ -1,12 +1,5 @@
-_site/*
-.sass-cache/
-_theme_packages/*
-
-Thumbs.db
+_site
+Gemfile.lock
+.jekyll-metadata
+debug.log
 .DS_Store
-
-!.gitkeep
-
-.rbenv-version
-.rvmrc
-*.swp
