@@ -1,7 +1,7 @@
               {% if page.category!='index' %}
                   {% assign latestposts = site.categories[page.category] %} 
               {% else %}
-                  {% assign latestposts = site.posts %}
+                  {% assign latestposts = paginator.posts %}
               {% endif %}
               <div class="col-lg-12">
                 <ul class="list-unstyled">
