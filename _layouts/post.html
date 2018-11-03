@@ -13,6 +13,15 @@ layout: default
 			},
 			300);
 		}; //主要修复评论定位不准确BUG
+  }
+  
+  window.onhashchange = function(){
+		if (window.location.hash.indexOf('#') >= 0) {
+			$('html,body').animate({
+				scrollTop: ($(decodeURIComponent(window.location.hash)).offset().top - 52) + "px"
+			},
+			300);
+		}; //主要修复评论定位不准确BUG
 	}
 </script> 
 <div  class="post_frame">
