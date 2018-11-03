@@ -12,6 +12,7 @@ domain: zmj1316.github.io
 
 all_categories: [
   ["tag", "标签","/tags.html"],
+  ["other", "其他","/others.html"],
   ["about", "关于","/about.html"]
 ]
 
