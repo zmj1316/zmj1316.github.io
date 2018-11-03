@@ -2,10 +2,7 @@
 layout: page
 title: 分类
 ---
-<!-- <svg class="cloud" style="width:95%;height:600px">
-    <g></g>
-</svg> -->
-<div class="tag_posts">
+<!-- <div class="tag_posts">
 {% for tag in site.categories %} 
 	<a name="{{ tag[0] }}"  id = "{{ tag[0] }}"></a>
     <h3>{{ tag[0] }}({{ tag[1].size }})</h3>
@@ -15,4 +12,4 @@ title: 分类
 	{% endfor %}
 	</ul>
 {% endfor %}
-</div>
+</div> -->

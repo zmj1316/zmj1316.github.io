@@ -9,7 +9,7 @@ layout: default
 <!-- Navi -->
 <div class="post_navi">
 	<a href="/">首页</a>&nbsp;>&nbsp;
-	<a href="{{ category_link }}">{{ category_name }}</a>&nbsp;>&nbsp;
+	<a href="/category#{{ page.category }}">{{ page.category }}</a>&nbsp;>&nbsp;
 	<span class="post_navi_span">正文</span>
 </div>
 
@@ -18,7 +18,7 @@ layout: default
 	<h1>{{ page.title }}</h1>
 	<hr class="hrline"/>
 	<div class="post_titledate">
-		栏目：<a href="{{ category_link }}">{{ category_name }}</a>&nbsp;&nbsp;&nbsp;
+		栏目：<a href="/category#{{ page.category }}">{{ page.category }}</a>&nbsp;&nbsp;&nbsp;
 		{% if page.tags.size > 0%}
 			标签：{% for tag in page.tags %}
 					{% if tag != "" %}
