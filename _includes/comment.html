@@ -1,17 +1,15 @@
-  <div id="git_comment" style="margin:0px 10px"></div>
-  <script src="/comment/gitment.browser.js"></script>
-  <script>
-    var clientId = 'db40ef7cbe6ca063fec6'
-    var clientSecret = '98603ff002c1d15d639d0708a4a80d2de41c4c4e'
-    var gitment = new Gitment({
-      id: window.location.pathname,
-      owner: 'zmj1316',
-      repo: 'gitment',
-      oauth: {
-        client_id: clientId,
-        client_secret: clientSecret,
-      },
-    })
-
-    gitment.render('git_comment')
-  </script>
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: window.location.pathname, // 可选。默认为 location.href
+  owner: 'zmj1316',
+  repo: 'gitment2',
+  oauth: {
+    client_id: 'db40ef7cbe6ca063fec6',
+    client_secret: '98603ff002c1d15d639d0708a4a80d2de41c4c4e',
+  },
+})
+gitment.render('container')
+</script>
