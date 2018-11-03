@@ -34,7 +34,7 @@ title: Tags
     },
 {% endfor %}
 -->
-
+<!-- 
 <script src="{{ '/js/d3.js' }}"></script>
 <script src="{{ '/js/d3.layout.cloud.js' }}"></script>
 
@@ -142,9 +142,9 @@ title: Tags
         
     layout.start();
     
-</script>
+</script> -->
 
-{% for tag in tags %}
+<!-- {% for tag in tags %}
 	<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
 	<ul>
 	 {% for post in site.posts %}
@@ -164,4 +164,4 @@ title: Tags
 	 {% endfor %}
 	</ul>
 {% endfor %}
-
+ -->
