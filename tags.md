@@ -2,16 +2,16 @@
 layout: page
 title: Tags
 ---
-<!-- <svg class="cloud" style="width:95%;height:600px">
-    <g></g>
-</svg> -->
-
-<style>
-		h1 { position: fixed; width: 100%; text-align: center; background: red; color: white; padding: 180px 0 30px; top: 0; left: 0; z-index: 1000; }
-		h1 span { display: block; font-size: 75%; }
-		h2, ul {  }
-		h3, span, #top { margin-top: -300px; padding-bottom: 300px; display: block; }
-</style>
+<script type="text/javascript">
+	window.onload = function(){
+		if (window.location.hash.indexOf('#') >= 0) {
+			$('html,body').animate({
+				scrollTop: ($(window.location.hash).offset().top - 50) + "px"
+			},
+			300);
+		}; //主要修复评论定位不准确BUG
+	}
+</script> 
 
 <div class="tag_posts">
 {% for tag in site.tags %} 
