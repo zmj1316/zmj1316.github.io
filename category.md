@@ -4,7 +4,7 @@ title: 分类
 ---
 
 <style>
-		h3 { margin-top: 300px; padding-bottom: 300px; display: block; }
+		h3 { margin-top: 300px; }
 </style>
 
 <div class="tag_posts">
