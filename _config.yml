@@ -27,7 +27,7 @@ excerpt_separator:  '<!--more-->'
 #不使用gems库中的jekyll-paginate-category
 #使用基于jekyll-paginate改写的的栏目分页插件，所以jekyll-paginate还需要用上。
 #gems: [jekyll-paginate,jekyll-paginate-category]
-gems: [jekyll-paginate,jekyll-paginate-category,jekyll-sitemap]
+gems: [jekyll-paginate,jekyll-sitemap]
 
 collections:
   docs:
