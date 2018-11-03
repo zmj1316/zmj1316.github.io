@@ -2,7 +2,7 @@
 layout: page
 title: 分类
 ---
-<!-- <div class="tag_posts">
+<div class="tag_posts">
 {% for tag in site.categories %} 
 	<a name="{{ tag[0] }}"  id = "{{ tag[0] }}"></a>
     <h3>{{ tag[0] }}({{ tag[1].size }})</h3>
@@ -12,4 +12,4 @@ title: 分类
 	{% endfor %}
 	</ul>
 {% endfor %}
-</div> -->
+</div>
