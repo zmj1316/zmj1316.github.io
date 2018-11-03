@@ -4,10 +4,7 @@ title: 分类
 ---
 
 <style>
-		h1 { position: fixed; width: 100%; text-align: center; background: red; color: white; padding: 180px 0 30px; top: 0; left: 0; z-index: 1000; }
-		h1 span { display: block; font-size: 75%; }
-		h2, ul {  }
-		h3, span, #top { margin-top: -300px; padding-bottom: 300px; display: block; }
+		h3 { margin-top: 300px; padding-bottom: 300px; display: block; }
 </style>
 
 <div class="tag_posts">
