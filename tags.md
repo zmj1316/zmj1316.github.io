@@ -2,16 +2,7 @@
 layout: page
 title: Tags
 ---
-<script type="text/javascript">
-	window.onload = function(){
-		if (window.location.hash.indexOf('#') >= 0) {
-			$('html,body').animate({
-				scrollTop: ($(window.location.hash).offset().top - 52) + "px"
-			},
-			300);
-		}; //主要修复评论定位不准确BUG
-	}
-</script> 
+
 
 <div class="tag_posts">
 {% for tag in site.tags %} 
