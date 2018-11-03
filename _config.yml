@@ -27,13 +27,14 @@ excerpt_separator:  '<!--more-->'
 #不使用gems库中的jekyll-paginate-category
 #使用基于jekyll-paginate改写的的栏目分页插件，所以jekyll-paginate还需要用上。
 #gems: [jekyll-paginate,jekyll-paginate-category]
-gems: [jekyll-paginate]
+gems: [jekyll-paginate,jekyll-paginate-category,jekyll-sitemap]
 
 collections:
   docs:
     output: true
 
 copyright: []
-#timezone: Asia/Shanghai
+timezone: Asia/Shanghai
 
 theme: jekyll-theme-leap-day
+safe: false
