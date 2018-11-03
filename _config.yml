@@ -11,9 +11,9 @@ url: https://zmj1316.github.io
 domain: zmj1316.github.io
 
 all_categories: [
-  ["tag", "标签","/tags.html"],
-  # ["other", "其他","/others.html"],
-  ["about", "关于","/about.html"]
+  ["tag", "标签","/tags"],
+  ["category", "分类","/category"],
+  ["about", "关于","/about"]
 ]
 
 paginate: 10 
