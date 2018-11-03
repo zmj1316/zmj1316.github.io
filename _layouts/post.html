@@ -22,7 +22,7 @@ layout: default
 		{% if page.tags.size > 0%}
 			标签：{% for tag in page.tags %}
 					{% if tag != "" %}
-					<a href="/tag/{{ tag }}.html">{{ tag }}</a>
+					<a href="/tags#{{ tag }}">{{ tag }}</a>
 					{% if forloop.index != page.tags.size %},
 					{% endif %}
 					{% endif %}
