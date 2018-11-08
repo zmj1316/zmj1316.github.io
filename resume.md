@@ -11,7 +11,8 @@ title: Key Zhang's 的简历
 * 邮箱： [zmj1316@gmail.com](mailto:zmj1316@gmail.com)
 * 电话： `hide`
 * 出生日期： 1995-04-19
-
+* github：[https://github.com/zmj1316](https://github.com/zmj1316)
+* 主页：[https://zmj1316.github.io](https://zmj1316.github.io)
 
 ## 教育经历
 
@@ -67,5 +68,11 @@ __骨骼动画 IK 系统__
 `2016/10 - 2017/02`
 __Unity 资源加载管理框架__
 
+`2018/02 - 2018/03`
+__GPU based path tracer__
+
+* 基于 D3D11 Compute Shader 实现的 path tracer。
+* 实现了 BVH 加速结构、重要性采样、轮盘等算法
+* 项目地址: [https://github.com/zmj1316/path-tracer](https://github.com/zmj1316/path-tracer)
 
 ## 职业经历
