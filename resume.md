@@ -27,7 +27,7 @@ __浙江大学，计算机技术，硕士__
 
 ### 语言
 
-`C++` > `Python` > `JavaScript`, `MaxScript`, `Shell`
+C++ > Python > JavaScript, MaxScript, Shell
 
 ### 技能
 
