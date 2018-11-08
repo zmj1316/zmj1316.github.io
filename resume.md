@@ -9,7 +9,7 @@ title: Key Zhang's 的简历
 
 * 性别： 男
 * 邮箱： [zmj1316@gmail.com](mailto:zmj1316@gmail.com)
-* 电话： `hide`
+* 联系电话： `hide`
 * 出生日期： 1995-04-19
 * github：[https://github.com/zmj1316](https://github.com/zmj1316)
 * 主页：[https://zmj1316.github.io](https://zmj1316.github.io)
