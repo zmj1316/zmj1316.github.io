@@ -1,6 +1,6 @@
 ---
 layout: resume
-title: Key Zhang's 的简历
+title: Key Zhang 的简历
 ---
 
 # Key Zhang
