@@ -42,3 +42,5 @@ timezone: Asia/Shanghai
 
 theme: jekyll-theme-leap-day
 safe: false
+
+style:  kjhealy
