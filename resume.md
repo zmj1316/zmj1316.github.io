@@ -90,6 +90,15 @@ __GPU based path tracer__
 * 实现了 BVH 加速结构、重要性采样、轮盘等算法
 * 项目地址: [https://github.com/zmj1316/path-tracer](https://github.com/zmj1316/path-tracer)
 
+`2016/03 - 2016/05`
+
+__课程设计 Blipay__
+
+* 软件工程团队课程设计
+* 前端基于 React，后端基于 Express
+* 实时聊天基于 socket.io
+* 项目地址: [https://github.com/magicae/Blipay](https://github.com/magicae/Blipay)
+
 ## 职业经历
 
 `2016/07 - 至今`
