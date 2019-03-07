@@ -13,6 +13,7 @@ title: Key Zhang 的简历
 * 出生日期： 1995-04-19
 * github：[https://github.com/zmj1316](https://github.com/zmj1316)
 * 主页：[https://zmj1316.github.io](https://zmj1316.github.io)
+* 目标方向： C++, 图形开发
 
 ## 教育经历
 
