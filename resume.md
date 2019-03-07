@@ -158,9 +158,9 @@ __引擎开发实习生__
 
 ## 附录部分
 
-## Virtual Texture
-
 <span id="VT"></span>
+
+## Virtual Texture
 
 ###  概念
 
@@ -198,10 +198,10 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 
 ![](/images/VTMips.JPG)
 
+<span id="VT"></span>
+
 
 ## 物理材质系统和工具链
-
-<span id="VT"></span>
 
 ### 解释
 
@@ -224,9 +224,9 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 ![](/images/MaxTool.jpg)
 
 
-## 打包工具
-
 <span id="PG"></span>
+
+## 打包工具
 
 ### 流程图
 
