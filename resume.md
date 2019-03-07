@@ -51,7 +51,7 @@ __*超大规模 Procedural Virtual Texture 地表渲染__
 
 * 基于 Virtual Texture 的高效大世界细节地表渲染
 * 离线加载\实时生成 Atlas Page
-* 基于四叉树的二级页表查找，实现超大规模（2<sup>20</sup> 级别）VT 的快速更新和索引; 参考 far cry4 的 Adaptive Procedure Virtual Texture 实现的改进方案，对 far cry 的扩容方案进行了改进，更加实用和明确
+* 基于四叉树的二级页表查找，实现超大规模（2^20 级别）VT 的快速更新和索引; 参考 far cry4 的 Adaptive Procedure Virtual Texture 实现的改进方案，对 far cry 的扩容方案进行了改进，更加实用和明确
 * 实现了基于 Compute Shader 的 BC1 和 BC5 格式的实时压缩
 * 详细项目解释请看 [附录1](#VT)
 
@@ -171,7 +171,7 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 
 因此得到实践的方案就是，将整个大世界的地表映射到 Virtual Texture 的地址空间，根据玩家相机所在的位置，对其周围的地表区块进行预先计算，并且写入到 Virtual Texture 中对应的位置，在运行时直接采样 VT 得到结果，从而提高性能。对于离开玩家视野的区块，则根据 LRU 进行卸载，控制物理显存的占用。
 
-而随着游戏画面的不断提高，地表的精度也不断提高，Virtual Texture 的大小也增大了几个数量级，从而使得 PageTable 的大小也水涨船高，以目标项目为例， VT 的大小是 2<sup>20</sup>，一个 Page 大小是 256X256，所以 PageTable 的大小来到了 2<sup>12</sup>，也就是 4K 的大小，这无论是对于其更新还是采样都造成了困扰，育碧为了实现更高的精度，提出了相应的解决方案（参考 far cry 4 的 Adaptive Procedure Virtual Texture）。
+而随着游戏画面的不断提高，地表的精度也不断提高，Virtual Texture 的大小也增大了几个数量级，从而使得 PageTable 的大小也水涨船高，以目标项目为例， VT 的大小是 2^20 ，一个 Page 大小是 256X256，所以 PageTable 的大小来到了 2^12 ，也就是 4K 的大小，这无论是对于其更新还是采样都造成了困扰，育碧为了实现更高的精度，提出了相应的解决方案（参考 far cry 4 的 Adaptive Procedure Virtual Texture）。
 
 但是原文的实现方式过于复杂，我直接参考了 OS 上的多级页表结构，对一级页表进行了一次分页操作，实现了 Virtual Texture 的二级页表方案，逻辑更清晰，流程更简洁。
 
