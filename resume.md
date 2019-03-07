@@ -158,11 +158,11 @@ __引擎开发实习生__
 
 ## 附录部分
 
-### Virtual Texture
+## Virtual Texture
 
 <span id="VT"></span>
 
-#### 概念
+###  概念
 
 Virtual Texture 是由卡马克最先在 ID 的游戏 RAGE 中实用的，由于其突出的优势，目前在育碧旗下的各个开放世界游戏中得到了运用，最出名的包括 FarCry 和 Ghost Recon 系列。
 
@@ -176,7 +176,7 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 
 但是原文的实现方式过于复杂，我直接参考了 OS 上的多级页表结构，对一级页表进行了一次分页操作，实现了 Virtual Texture 的二级页表方案，逻辑更清晰，流程更简洁。
 
-#### 图例
+### 图例
 
 如图所示，下面就是 Cache 在物理显存中的页表
 
@@ -199,11 +199,11 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 ![](/images/VTMips.jpg)
 
 
-### 物理材质系统和工具链
+## 物理材质系统和工具链
 
 <span id="VT"></span>
 
-#### 解释
+### 解释
 
 * 这个东西做来干什么的？
 
@@ -217,8 +217,17 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 
 而我们为了实现更真实的物理效果，需要对物理模型进行材质细分，因此我从美术制作流程开始设计（参考了 EA 美术的经验），实现了完整的物理材质制作流程，使得美术可以在 Max 中导出渲染模型和材质的同时，也能制作、导出物理模型和材质划分的自定义数据格式，并且在引擎中集成相应的解析功能。
 
-#### 效果图
+### 效果图
 
 如图，美术在 Max 中指定了物理模型的两个部分材质分别为 Stone 和 Chain ，工具将会识别这些标记并且转换为相应的物理数据。
 
 ![](/images/MaxTool.jpg)
+
+
+## 打包工具
+
+<span id="PG"></span>
+
+### 流程图
+
+![流程图](/images/Pack.jpg)
