@@ -198,6 +198,10 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 
 ![](/images/VTMips.JPG)
 
+
+
+<div style="page-break-after: always;"></div>
+
 <span id="VT"></span>
 
 
@@ -222,6 +226,8 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 如图，美术在 Max 中指定了物理模型的两个部分材质分别为 Stone 和 Chain ，工具将会识别这些标记并且转换为相应的物理数据。
 
 ![](/images/MaxTool.jpg)
+
+<div style="page-break-after: always;"></div>
 
 
 <span id="PG"></span>
