@@ -100,7 +100,7 @@ __*\*端游客户端资源发布流程优化*__
 __骨骼动画 IK 系统__
 
 * 实现了基于 FABRIK 算法的全身动画 IK 计算模块，后续已经集成到端游引擎中
-* 部分代码 [gist](https://gist.github.com/zmj1316/4bec6de16d25ff9e779de27db5e96001)
+* 部分代码 [gist 链接](https://gist.github.com/zmj1316/4bec6de16d25ff9e779de27db5e96001)
 
 `2016/09 - 2017/02`
 
@@ -231,3 +231,6 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 ### 流程图
 
 ![流程图](/images/Pack.JPG)
+
+1. 将原流程的 svn update 和 文件时间比较、md5比较 用远程的 svn diff 操作代替，直接得到增量结果，干掉了多余的 IO
+2. 将 CPU 开销巨大的贴图转换工作，提前到平时完成，通过时间分摊了 CPU 压力，打包的时候直接下载转换完成的文件，将 CPU 开销变为网络 IO 开销 
