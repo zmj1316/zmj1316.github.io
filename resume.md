@@ -240,4 +240,5 @@ Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了�
 
 
  1  将原流程的 svn update 和 文件时间比较、md5比较 用远程的 svn diff 操作代替，直接得到增量结果，干掉了多余的 IO
+ 
  2  将 CPU 开销巨大的贴图转换工作，提前到平时完成，通过时间分摊了 CPU 压力，打包的时候直接下载转换完成的文件，将 CPU 开销变为网络 IO 开销 
