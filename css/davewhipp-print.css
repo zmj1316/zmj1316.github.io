@@ -167,14 +167,14 @@ a:hover {
 	margin-top: 1em;
 	position: relative;
 	left: 25%;
-	color: #ccc;
+	color: rgb(253, 79, 10);
 	font-family: Monaco,Menlo,monospace,sans-serif;
 	font-size: 90%;
 }
 
-#webaddress a {
+/* #webaddress a {
 	text-decoration: none;
-}
+} */
 
 em {
 	font-style: normal;

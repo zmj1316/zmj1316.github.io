@@ -165,14 +165,14 @@ a:hover {
 	margin-top: 1em;
 	position: relative;
 	left: 25%;
-	color: #bc412b;
+	color: #c02307;
 	font-family: Monaco,Menlo,monospace,sans-serif;
 	font-size: 100%;
 }
 
-#webaddress a {
+/* #webaddress a {
 	text-decoration: none;
-}
+} */
 
 em {
 	/* font-weight: bold; */
