@@ -167,13 +167,13 @@ a:hover {
 	margin-top: 1em;
 	position: relative;
 	left: 28%;
-	color: #ccc;
+	color: rgb(247, 0, 0);
 	font-family: Menlo,monospace,sans-serif;
 	font-size: 80%;
 }
 
 #webaddress a {
-	text-decoration: none;
+	color: rgb(247, 0, 0);
 }
 
 em {
