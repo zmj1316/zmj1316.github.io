@@ -164,7 +164,7 @@ __引擎开发实习生__
 
 ###  概念
 
-Virtual Texture 是由卡马克最先在 ID 的游戏 RAGE 中实用的，由于其突出的优势，目前在育碧旗下的各个开放世界游戏中得到了运用，最出名的包括 FarCry 和 Ghost Recon 系列。
+Virtual Texture 是由卡马克最先在 ID 的游戏 RAGE 中实用的，由于其突出的优势，目前在育碧旗下的各个开放世界游戏中得到了运用，最出名的包括 Far Cry 和 Ghost Recon 系列。
 
 Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了一个极大的贴图地址空间，但是并不实际分配物理显存，而是通过一张 PageTable 即 页表，来将空间映射到一块实际的贴图上，而分配空间的最小单位，即为 Page 页。这样，就可以用一张相比 Virtual Texture 极小的 PageTable 来实现对整个虚拟地址空间的索引。
 
