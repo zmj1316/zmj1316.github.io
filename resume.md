@@ -156,22 +156,45 @@ __引擎开发实习生__
 
 <div style="page-break-after: always;"></div>
 
-# 附录部分
+## 附录部分
 
-## Virtual Texture
+### Virtual Texture
 
 <span id="VT">Virtual Texture</span>
 
-### 概念
+#### 概念
 
 Virtual Texture 是由卡马克最先在 ID 的游戏 RAGE 中实用的，由于其突出的优势，目前在育碧旗下的各个开放世界游戏中得到了运用，最出名的包括 FarCry 和 Ghost Recon 系列。
 
-Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了一个极大的贴图地址空间，但是并不实际分配物理显存，而是通过一张 `PageTable` 即 `页表`，来将空间映射到一块实际的贴图上，而分配空间的最小单位，即为 `Page` 页。这样，就可以用一张相比 Virtual Texture 极小的 `PageTable` 来实现对整个虚拟地址空间的索引。
+Virtual Texture 概念和 OS 中的 Virtual Address 类似，是预先定义了一个极大的贴图地址空间，但是并不实际分配物理显存，而是通过一张 PageTable 即 页表，来将空间映射到一块实际的贴图上，而分配空间的最小单位，即为 Page 页。这样，就可以用一张相比 Virtual Texture 极小的 PageTable 来实现对整个虚拟地址空间的索引。
 
 具体到实际的应用中，由于游戏大世界的地表需要足够的多样性和复杂度来提高真实性，往往在每帧的渲染中需要通过对大量贴图进行采样和计算才能得到结果，所以需要一个技术能将复杂计算的结果 Cache 下来，这样之后就只需要直接采样计算的结果，不需要再进行复制计算和多次采样了。
 
 因此得到实践的方案就是，将整个大世界的地表映射到 Virtual Texture 的地址空间，根据玩家相机所在的位置，对其周围的地表区块进行预先计算，并且写入到 Virtual Texture 中对应的位置，在运行时直接采样 VT 得到结果，从而提高性能。对于离开玩家视野的区块，则根据 LRU 进行卸载，控制物理显存的占用。
 
-而随着游戏画面的不断提高，地表的精度也不断提高，Virtual Texture 的大小也增大了几个数量级，从而使得 `PageTable` 的大小也水涨船高，以目标项目为例， VT 的大小是 2<sup>20</sup>，一个 Page 大小是 256X256，所以 `PageTable` 的大小来到了 2<sup>12</sup>，也就是 4K 的大小，这无论是对于其更新还是采样都造成了困扰，育碧为了实现更高的精度，提出了相应的解决方案（参考 far cry 4 的 Adaptive Procedure Virtual Texture）。
+而随着游戏画面的不断提高，地表的精度也不断提高，Virtual Texture 的大小也增大了几个数量级，从而使得 PageTable 的大小也水涨船高，以目标项目为例， VT 的大小是 2<sup>20</sup>，一个 Page 大小是 256X256，所以 PageTable 的大小来到了 2<sup>12</sup>，也就是 4K 的大小，这无论是对于其更新还是采样都造成了困扰，育碧为了实现更高的精度，提出了相应的解决方案（参考 far cry 4 的 Adaptive Procedure Virtual Texture）。
 
 但是原文的实现方式过于复杂，我直接参考了 OS 上的多级页表结构，对一级页表进行了一次分页操作，实现了 Virtual Texture 的二级页表方案，逻辑更清晰，流程更简洁。
+
+#### 图例
+
+如图所示，下面就是 Cache 在物理显存中的页表
+
+二级页表:
+
+![二级页表](/images/PageLevel2.jpg)
+
+一级页表:
+
+![一级页表](/images/PageLevel1.jpg)
+
+物理显存贴图:
+
+![物理贴图](/images/Atlas.jpg)
+
+
+
+如图所示，不同颜色表示根据与相机的距离，加载的不同精度的 Page，精度越低，一块 Page 能覆盖的地表就越大，最终实现对地表贴图的高效 Cache。
+
+![](/images/VTMips.jpg)
+
