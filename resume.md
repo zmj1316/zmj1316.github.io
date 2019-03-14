@@ -3,7 +3,7 @@ layout: resume
 title: KZ的简历PLUS
 ---
 
-# 章敏捷
+# Key Zhang
 
 ## 个人信息
 
