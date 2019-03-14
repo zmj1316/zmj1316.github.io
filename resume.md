@@ -1,6 +1,6 @@
 ---
 layout: resume
-title: 章敏捷的简历PLUS
+title: KZ的简历PLUS
 ---
 
 # 章敏捷
