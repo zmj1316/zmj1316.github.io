@@ -84,7 +84,7 @@ __*超大规模 Procedural Virtual Texture 地表渲染__
 
 #### 工作重点
 
-* 创新的采用了 **二级页表** 进行查找，实现超大规模（2^20 像素级别） Virtual Texture 的快速更新和索引，对育碧的 "Adaptive Virtual Texture" 就行了改进
+* 创新的采用了 **二级页表** 进行查找，实现超大规模（2^20 像素级别） Virtual Texture 的快速更新和索引，对育碧的 "Adaptive Virtual Texture" 进行了改进
 * 实现了基于 Compute Shader 的 BC1 和 BC5 格式的**实时贴图压缩**，将显存开销缩小到原来的 1/6
 
 
