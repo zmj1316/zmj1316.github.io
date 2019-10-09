@@ -72,7 +72,7 @@ Visual Studio, VTune, RenderDoc, 3DS MAX, Docker, WinDbg, SSH
 ### 正式项目
 
 
-`2018/12 - 2019/04`
+`2018/12 - 至今`
 
 __*超大规模 Procedural Virtual Texture 地表渲染__
 
