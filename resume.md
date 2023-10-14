@@ -76,12 +76,35 @@ C++ > C#,Python > JavaScript, MaxScript, Shell
 
 ### 工具
 
-Visual Studio, VTune, RenderDoc, 3DS MAX, Docker, WinDbg, SSH, XCode
+Visual Studio, VTune, RenderDoc, 3DS MAX, Docker, WinDbg, SSH, Xcode
 
 
 ## 项目经历
 
 ### 正式项目
+
+`2022-至今`
+
+__* ECS 性能优化__
+* 持续迭代 BatchRendererGroup 接口，提高剔除和渲染提交性能
+* 实现 MiniCollider 模块，将 Physx 物理接入 ECS 管理 
+
+`2020-2021`
+
+__* J1 项目前期引擎性能维护__
+* 在项目性能小组成立之前组织周版本性能跑测，输出报告分析，持续定位性能问题
+* 协助 Review 各模块开发功能的性能
+
+`长期`
+
+__*Unity资产管理方案__
+
+#### 工作成果
+* 对外包发布保密方案，发布项目支持可自定义规则的代码、Shader、美术资产加密，不影响编辑器正常功能
+* 本地项目按需拉取美术资产，减少磁盘占用和更新开销
+
+#### 工作重点
+* TODO
 
 `2019/12 - 2020/03`
 
@@ -93,11 +116,12 @@ __* JNFS: 一体化的Unity资源文件管理系统__
 * 向上对用户精简接口，只需要加载、卸载、读取文件
 * 内部实现资源引用计数、文件压缩解压、加密解密
 * 向下对Lua WWise Criware等三方库开放原生文件访问接口，统一整个游戏生命周期的打包、加载、patch逻辑
+* 支持从编辑器按需向 Player 实时传输资源，实现完整包体的快速patch，以及精简包体的快速启动
 
 #### 工作重点
 * 梳理了Unity整个资源序列化、打包加载逻辑，只保留必要部分在JNFS中
 * 使用 ScriptableBuildPipeline 自定义打包流程，精准剔除冗余资源，自定义build cache方案，提高增量打包性能
-* 自定义打包格式，对内支持文件自定义压缩，混淆，对外支持各类patch和分包逻辑
+* 自定义打包格式，对内支持文件自定义压缩（LZMA LZ4 ZSTD），混淆，对外支持各类patch和分包逻辑
 * 使用 Unity Native Plugin 对外开放 VFS 层接口，统一了文件访问方式，所有文件都通过JNFS发布，减少patch分包等工作量
 
 `2019/08 - 2019/12`
