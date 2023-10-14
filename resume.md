@@ -1,6 +1,6 @@
 ---
 layout: resume
-title: KZ的简历PLUS
+title: 简历
 ---
 
 # 章敏捷
@@ -13,7 +13,7 @@ title: KZ的简历PLUS
 * 出生日期： 1995-04-19
 * github：[https://github.com/zmj1316](https://github.com/zmj1316)
 * 主页：[https://zmj1316.github.io](https://zmj1316.github.io)
-* 目标方向： C++, 图形开发
+* 目标方向： C++, 图形开发，引擎架构
 
 ## 教育经历
 
@@ -29,11 +29,17 @@ __浙江大学，计算机技术，硕士__
 
 ## 职业经历
 
-`2019/08 - 至今`
+`2020/04 - 至今`
+
+__引擎架构开发__
+
+朝夕光年-江南工作室
+
+`2019/08 - 2020/04`
 
 __技术实习生__
 
-字节跳动
+字节跳动-江南工作室
 
 `2019/05 - 2019/08`
 
@@ -62,23 +68,39 @@ __引擎开发实习生__
 
 ### 语言
 
-C++ > Python > JavaScript, MaxScript, Shell
+C++ > C#,Python > JavaScript, MaxScript, Shell
 
 ### 技能
 
-游戏开发, 图形学, 动画系统, 物理系统, 并行计算, 操作系统
+游戏开发, 图形学, 动画系统, 物理系统, 并行计算, 操作系统, 引擎架构
 
 ### 工具
 
-Visual Studio, VTune, RenderDoc, 3DS MAX, Docker, WinDbg, SSH
+Visual Studio, VTune, RenderDoc, 3DS MAX, Docker, WinDbg, SSH, XCode
 
 
 ## 项目经历
 
 ### 正式项目
 
+`2019/12 - 2020/03`
 
-`2019/08 - 至今`
+__* JNFS: 一体化的Unity资源文件管理系统__
+
+#### 工作成果
+* 取代了 AssetBundle，解决了其带来的包体、内存冗余和加载性能问题
+* 自定义打包格式，实现包体管理和加密功能
+* 向上对用户精简接口，只需要加载、卸载、读取文件
+* 内部实现资源引用计数、文件压缩解压、加密解密
+* 向下对Lua WWise Criware等三方库开放原生文件访问接口，统一整个游戏生命周期的打包、加载、patch逻辑
+
+#### 工作重点
+* 梳理了Unity整个资源序列化、打包加载逻辑，只保留必要部分在JNFS中
+* 使用 ScriptableBuildPipeline 自定义打包流程，精准剔除冗余资源，自定义build cache方案，提高增量打包性能
+* 自定义打包格式，对内支持文件自定义压缩，混淆，对外支持各类patch和分包逻辑
+* 使用 Unity Native Plugin 对外开放 VFS 层接口，统一了文件访问方式，所有文件都通过JNFS发布，减少patch分包等工作量
+
+`2019/08 - 2019/12`
 
 __*超大规模 Procedural Virtual Texture 地表渲染__
 
@@ -166,7 +188,7 @@ __Unity 资源加载管理框架__
 * 在打包时记录并拆分 Unity 资源间的依赖关系，减少包体冗余
 * 运行时根据记录动态重建资源依赖，从而控制资源加载的内存占用
 
-### 业余|课程项目
+<!-- ### 业余|课程项目
 
 `2018/10 - 至今`
 
@@ -198,4 +220,4 @@ __课程设计 Blipay__
 * 前端基于 React，后端基于 Express
 * 实时聊天基于 socket.io
 * 项目地址: [https://github.com/magicae/Blipay](https://github.com/magicae/Blipay)
-
+ -->
