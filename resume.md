@@ -127,7 +127,7 @@ __JNFS: 一体化的Unity资源和文件管理系统__
 
 __Unity ECS 系统性能优化__
 * 持续迭代 BatchRendererGroup 接口，简化主线程向渲染线程进行数据拷贝的流程，提高剔除和渲染提交性能
-* 实现 MiniCollider 模块，将 Physx 物理接入 ECS 管理，消除了GameObject的内存以及加载卸载的性能开销
+* 实现 MiniCollider 模块，将场景的 Physx 物理接入 ECS 管理，消除了GameObject的内存以及加载卸载的性能开销
 
 
 `2021-2022`
