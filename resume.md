@@ -9,7 +9,7 @@ title: 简历
 
 * 性别： 男
 * 邮箱： [zmj1316@gmail.com](mailto:zmj1316@gmail.com)
-* 联系电话： 15967199113
+* 联系电话： 
 * 出生日期： 1995-04-19
 * github：[https://github.com/zmj1316](https://github.com/zmj1316)
 <!-- * 主页：[https://zmj1316.github.io](https://zmj1316.github.io) -->
